@@ -1,0 +1,124 @@
+@import "https://fonts.googleapis.com/css?family=Cairo";
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 5vh;
+}
+
+/* MAIN */
+
+#content {
+    padding-top: 20vh;
+    width: 850px;
+    margin: 0 auto;
+}
+    
+.notes p{
+    padding: 0.8em;
+}
+
+.notes {
+    position: relative;
+    list-style: none;
+    padding: 0; 
+}
+    
+    
+.notes li{
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    margin: 0 30px 30px 0;
+    background: #FFFFA5; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+ 
+
+
+/*  cookies */   
+
+#cookies {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 10%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    
+}
+    
+.hidden{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+
+#cookies #cookies-message {
+  padding: 0.2rem 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#cookies #cookies-accept,
+#cookies #cookies-decline,
+#cookies #cookies-link {
+  padding: 0.2rem 0.8rem;
+  border: 0;
+  background: white;
+  margin: 0 0.5rem;
+  transition: background 150ms ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#cookies #cookies-accept {
+  background: #3498db;
+  color: #ecf0f1;
+}
+#cookies #cookies-accept:hover, #cookies #cookies-accept:focus {
+  background: #57aae1;
+}
+#cookies #cookies-accept:active {
+  background: #68b2e4;
+}
+#cookies #cookies-decline {
+  background: #1e2a36;
+  color: #ecf0f1;
+}
+#cookies #cookies-decline:hover, #cookies #cookies-decline:focus {
+  background: #233140;
+}
+#cookies #cookies-decline:active {
+  background: #1e2a36;
+}
+#cookies #cookies-link {
+  color: #3498db;
+  background: none;
+  padding: 0.2rem 0;
+  margin: 0;
+}
+
+#cookies #cookies-link:hover, #cookies #cookies-link:focus {
+  text-decoration: underline;
+}

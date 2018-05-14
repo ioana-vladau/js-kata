@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cookies" class="hidden">
+        <p id="cookies-message">We use cookies just to track visits to our website, we store no personal details.</p>
+        <button id="cookies-accept" class="accept-or-decline">Accept cookies</button>
+        <button id="cookies-decline" class="accept-or-decline">Decline cookies</button>
+        <a id="cookies-link" href="https://en.wikipedia.org/wiki/HTTP_cookie" title="Learn all about cookies and why sites use them" target="_blank">What are cookies?</a>            
+    </div>
+    
+    <main>  
+        <div id="content"> 
+            <h1>Monday, May 14th</h1>
+            <ul class="notes">
+                <li>
+                    <h2>Stuff</h2>
+                    <p>- $files - shows hidden files on Windows</p>
+                    <p id="delete-computer">- DO NOT rm -rf / </p>
+                    <p>- visual regression testing</p>
+                </li>
+                <li>
+                    <h2>Github</h2>
+                    <p>- add</p>
+                    <p>- commit</p>
+                    <p>- push</p>
+                </li>
+                <li>
+                    <h2>Design</h2>
+                    <p>- positioning: expensive operation because <em>the browser redraws everything</em></p>
+                    <p>- <span>transform: translate</span> is better, as it uses GPU</p>
+                </li>
+                <li style="visibility: hidden"></li>
+                <li><img id="cookie-image" src="https://lezebre.lu/images/detailed/26/65626-JDM-Cookie-Monster.png"/></li>
+            </ul> 
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
