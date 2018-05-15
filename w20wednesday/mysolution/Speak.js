@@ -34,8 +34,6 @@ class Speak {
         return this;
     }
     speak(){
-
-
         const toDoList = Array.from(document.querySelectorAll('ul>li'));
         let toDoListWithoutKids = [];
         for (let i=0; i<toDoList.length; i++){
