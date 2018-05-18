@@ -84,6 +84,8 @@ function buildList() {
         // build a list of all the links in list_data
         list_data.forEach(function(object){
             let description = object.description;
+            // I JUST SAW IT'S DEPRECATED
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link
             let link = description.link(object.link);
             createLi(object).innerHTML = link;
         })
@@ -93,12 +95,7 @@ function buildList() {
 function createLi(element) {
     const li = document.createElement("li");
     theList.appendChild(li);
-
-    let url = element.link.split("://")[1];
-    let url2 = url.split("/")[0];
-    console.log(url2)
-    // li.setAttribute("title", url2)
-
-
+    let url = element.link.split("://")[1].split("/")[0];
+    li.setAttribute("title", url);
     return li;
 }

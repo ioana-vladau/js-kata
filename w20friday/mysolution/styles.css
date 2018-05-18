@@ -1,0 +1,23 @@
+/* TODO: Make it pretty! */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins|Sintony');
+
+body{
+    box-sizing: border-box;
+}
+
+h1, h2, p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+ol li{
+    font-family: 'Sintony', sans-serif;
+    text-align: left;
+    margin-left: 37vw;
+    padding: 1em;
+}
+
+ol li a:link, ol li a:visited, ol li a:hover, ol li a:active{
+    color: black;
+}
