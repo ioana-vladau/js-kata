@@ -82,18 +82,23 @@ const list_data = [
 
 function buildList() {
         // build a list of all the links in list_data
-        list_data.forEach(function(e){
-            let str = e.description;
-            let result = str.link(e.link);
-            createLi(e).innerHTML = result;     
+        list_data.forEach(function(object){
+            let description = object.description;
+            let link = description.link(object.link);
+            createLi(object).innerHTML = link;
         })
     }
 
 // TODO: Make function createLi
 function createLi(element) {
-    let links=[];
     const li = document.createElement("li");
     theList.appendChild(li);
-    li.innerText = links[element];
+
+    let url = element.link.split("://")[1];
+    let url2 = url.split("/")[0];
+    console.log(url2)
+    // li.setAttribute("title", url2)
+
+
     return li;
 }
