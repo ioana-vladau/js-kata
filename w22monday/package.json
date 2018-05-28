@@ -1,0 +1,15 @@
+{
+  "name": "w22monday",
+  "version": "1.0.0",
+  "description": "Today you're gonna work with `fetch`, again. This time to fetch tweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "my-sass": "node-sass mysolution/sass/style.scss mysolution/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

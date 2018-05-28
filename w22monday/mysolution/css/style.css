@@ -1,0 +1,15 @@
+.hashtag-section, .load-more-button {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+article {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+  padding: 2em; }
+  article .name {
+    font-weight: bold; }
