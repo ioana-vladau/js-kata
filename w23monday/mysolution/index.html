@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remember User Details</title>
+    <style>
+        form{
+            margin-left: 2em;
+        }
+        
+        input[type="text"]{
+            display: block;
+            padding: 1em;
+            margin-top: 1em;
+        }
+
+        form, input[type="submit"]{
+            margin-top: 2em;
+        }
+
+        h1{
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<body>
+     <h1>Pick 2 colors to change the theme</h1>
+     <form id="user-form">
+        <div>
+            <label>
+                <span>Text color:</span>
+                <input required type="color" name="textcolor"> 
+            </label>
+        </div>  
+        <div>
+            <label>
+                <span>Background color:</span>
+                <input required type="color" name="backgroundcolor">
+            </label>
+        </div>
+
+        <input required type="text" name="username" placeholder="username">
+        <input required type="text" name="email" placeholder="email">
+        
+        <input type="submit" value="Submit">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
